@@ -32,6 +32,7 @@ jobs:
         uses: dtolnay/rust-toolchain@stable
         with:
           components: rustfmt, clippy
+          targets: ${{ matrix.rust_target }}
 
       - name: Rust cache
         uses: swatinem/rust-cache@v2
